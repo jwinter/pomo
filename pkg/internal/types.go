@@ -107,6 +107,7 @@ type Status struct {
 	Pauseduration time.Duration `json:"pauseduration"`
 	Count         int           `json:"count"`
 	NPomodoros    int           `json:"n_pomodoros"`
+	CurrentTask   string        `json:"current_task"`
 }
 
 // Notifier sends a system notification

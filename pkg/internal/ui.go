@@ -14,7 +14,9 @@ func setContent(wheel *Wheel, status *Status, par *widgets.Paragraph) {
 		par.Text = fmt.Sprintf(
 			`[%d/%d] Pomodoros completed
 
-			%s %s remaining
+			%s %s remaining on
+
+%s
 
 
 			[q] - quit [p] - pause
@@ -23,6 +25,7 @@ func setContent(wheel *Wheel, status *Status, par *widgets.Paragraph) {
 			status.NPomodoros,
 			wheel,
 			status.Remaining,
+			status.CurrentTask,
 		)
 	case BREAKING:
 

@@ -154,5 +154,6 @@ func (t *TaskRunner) Status() *Status {
 		NPomodoros:    t.nPomodoros,
 		Remaining:     t.TimeRemaining(),
 		Pauseduration: t.TimePauseDuration(),
+		CurrentTask:   t.taskMessage,
 	}
 }
